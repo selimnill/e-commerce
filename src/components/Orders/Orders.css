@@ -1,0 +1,19 @@
+.shipping{
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(45, 124, 45);
+    padding: 10px 10px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: sticky;
+    top: 65%;
+}
+.shipping:hover{
+    background-color: rgb(132, 219, 0);
+    color: black;
+    transition: 0.3s ease-in;
+}
