@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { BsGoogle } from 'react-icons/bs';
 import { useContext } from 'react';
 import { UserConext } from '../ContextApi/ContextApi';
-import Toast from 'react-bootstrap/Toast';
 import Toasts from '../Toast/Toasts';
 
 const Login = () => {
@@ -33,29 +32,31 @@ const Login = () => {
             })
 
     }
-    if(user){
+    if (user) {
         <Toasts></Toasts>
     }
 
     return (
-        <div className='login-container'>
-            <form onSubmit={handleSubmit}>
-                <h2 className='name'>Login.!</h2>
-                <div className="login-info">
-                    <div className="form-control">
-                        <label htmlFor="email">Email</label>
-                        <input type="text" name='email' required />
+        <div id="body">
+            <div className='login-container'>
+                <form onSubmit={handleSubmit}>
+                    <h2 className='name'>Login.!</h2>
+                    <div className="login-info">
+                        <div className="form-control">
+                            <label htmlFor="email">Email</label>
+                            <input type="text" name='email' required />
+                        </div>
+                        <div className="form-control">
+                            <label htmlFor="password">Password</label>
+                            <input type="password" name='password' required />
+                        </div>
+                        <button type="submit" className='btn-login'>Login</button>
+                        <p className='link'><small>New to Amazon?<Link to='/signup'> Create an Account.!</Link></small></p>
                     </div>
-                    <div className="form-control">
-                        <label htmlFor="password">Password</label>
-                        <input type="password" name='password' required />
-                    </div>
-                    <button type="submit" className='btn-login'>Login</button>
-                    <p className='link'><small>New to Amazon?<Link to='/signup'> Create an Account.!</Link></small></p>
+                </form>
+                <div className='login-popup'>
+                    <button type="submit" className='btn-google'><span className='icon'><BsGoogle /></span> Continue With Google</button>
                 </div>
-            </form>
-            <div className='login-popup'>
-                <button type="submit" className='btn-google'><span className='icon'><BsGoogle /></span> Continue With Google</button>
             </div>
         </div>
     );

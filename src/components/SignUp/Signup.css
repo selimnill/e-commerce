@@ -1,8 +1,13 @@
+#body{
+    background-image: linear-gradient(90deg, rgb(178, 227, 168) , rgb(231, 196, 131));
+    width: 1263px;
+    height: 550px;
+}
 .login-container{
-    margin: 30px auto;
+    margin: auto;
     height: 500px;
     width: 350px;
-    border: 2px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
     box-shadow: .5px .5px 20px 5px;
 }
@@ -18,8 +23,9 @@
 }
 .login-info input{
     width: 230px;
-    height: 23px;
+    height: 30px;
     font-size: 15px;
+    margin-bottom: -10px;
 }
 .login-info{
     padding-left: 60px;

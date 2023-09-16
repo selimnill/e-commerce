@@ -59,32 +59,34 @@ const Signup = () => {
 
 
     return (
-        <form className='login-container' onSubmit={handeSubmit}>
-            <h2 className='name'>Sign Up.!</h2>
-            <div className="login-info">
-                <div className="form-control">
-                    <label htmlFor="text">Name</label>
-                    <input type="text" name='name' required />
+        <div id="body">
+            <form className='login-container' onSubmit={handeSubmit}>
+                <h2 className='name'>Sign Up.!</h2>
+                <div className="login-info">
+                    <div className="form-control">
+                        <label htmlFor="text">Name</label>
+                        <input type="text" name='name' required />
+                    </div>
+                    <p className='warning'>{nameError}</p>
+                    <div className="form-control">
+                        <label htmlFor="email">Email</label>
+                        <input type="email" name='email' required />
+                    </div>
+                    <div className="form-control">
+                        <label htmlFor="password">Password</label>
+                        <input type="password" name='password' required />
+                    </div>
+                    <div className="form-control">
+                        <label htmlFor="confirm">Confirm Password</label>
+                        <input type="password" name='confirm' required />
+                    </div>
+                    <p className='warning'>{error}</p>
+                    <button type="submit" className='btn-login'>SignUp</button>
+                    <p className='link'><small>Already have an account?<Link to='/login'> Login!</Link></small></p>
+                    <button type="submit" className='btn-google'><span className='icon'><BsGoogle /></span> Continue With Google</button>
                 </div>
-                <p className='warning'>{nameError}</p>
-                <div className="form-control">
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name='email' required />
-                </div>
-                <div className="form-control">
-                    <label htmlFor="password">Password</label>
-                    <input type="password" name='password' required />
-                </div>
-                <div className="form-control">
-                    <label htmlFor="confirm">Confirm Password</label>
-                    <input type="password" name='confirm' required />
-                </div>
-                <p className='warning'>{error}</p>
-                <button type="submit" className='btn-login'>SignUp</button>
-                <p className='link'><small>Already have an account?<Link to='/login'> Login!</Link></small></p>
-                <button type="submit" className='btn-google'><span className='icon'><BsGoogle /></span> Continue With Google</button>
-            </div>
-        </form>
+            </form>
+        </div>
     );
 };
 

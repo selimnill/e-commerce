@@ -1,10 +1,18 @@
+#body{
+    background-image: linear-gradient(90deg, rgb(178, 227, 168) , rgb(231, 196, 131));
+    width: 1263px;
+    height: 550px;
+    top: -40px;
+}
+
 .login-container{
-    margin: 50px auto;
-    height: 200px;
+    margin: auto;
+    height: 500px;
     width: 350px;
-    border: 2px solid black;
+    border: 1px solid rgb(77, 255, 1);
     border-radius: 5px;
-    box-shadow: .5px .5px 20px 5px;
+    box-shadow: .5px .5px 20px 2px;
+    background-image: linear-gradient(90deg, rgb(249, 212, 6), rgb(23, 133, 23));
     
 }
 .name{
@@ -16,10 +24,11 @@
     font-weight: semibold;
     margin-bottom: 8px;
     margin-left: 5px;
+    font-weight: 600;
 }
 .login-info input{
     width: 230px;
-    height: 23px;
+    height: 40px;
     font-size: 15px;
 }
 .login-info{
@@ -30,12 +39,14 @@
     border: none;
     font-size: 16px;
     padding: 7px 0;
-    background-color: rgb(17, 124, 17);
-    border-radius: 10px;
+    background-image: linear-gradient(to right, blue, cyan);
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: 700;
 }
 .btn-login:hover{
-    background-color: rgb(154, 255, 2);
+    background-image: linear-gradient(to left, blue, cyan);
+
 }
 .form-control{
     margin-bottom: 20px;
@@ -53,18 +64,20 @@
     /* margin-left: 60px; */
     padding: 10px 0;
     border: none;
-    background-color: rgb(179, 68, 68);
-    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(255, 119, 7), rgb(97, 0, 253));
+    border-radius: 8px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
-    border: 2px solid blue;
+    color: white;
+    font-weight: 700;
 }
 .login-popup button{
     margin-left: 60px;
 }
 .btn-google:hover{
-    background-color: red;
+    background-image: linear-gradient(to left, rgb(255, 119, 7), rgb(97, 0, 253));
+
 }

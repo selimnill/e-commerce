@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../../images/Logo.svg';
 import './Header.css';
 import { UserConext } from '../ContextApi/ContextApi';
@@ -12,7 +12,8 @@ const Header = () => {
 
     return (
         <nav className='header'>
-            <img src={logo} alt="" />
+            {/* <img src={logo} alt="" /> */}
+            <Link to='/'><h3 id='amazon'>Amazon</h3></Link>
             <div>
                 <Link to="/">Shop</Link>
                 <Link to="/orders">Orders</Link>
@@ -26,6 +27,8 @@ const Header = () => {
                         <Link to="/signup">Sign Up</Link>
                     </>
                 }
+                <Link>{user?.email}</Link>
+
             </div>
         </nav>
     );
